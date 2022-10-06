@@ -57,33 +57,21 @@ A sigla SHA significa *[Secure Hash Algorithm](https://en.wikipedia.org/wiki/Sec
 
 O resultado da encriptação gera um conjunto de caracteres identificador de 40 dígitos **ÚNICOS**. Sendo uma forma curta de representar um arquivo. 
 
-![image-20221006082717052](C:\Users\Aline\AppData\Roaming\Typora\typora-user-images\image-20221006082717052.png)
-
 Na prática o SHA1 irá encriptar arquivos  e qualquer alteração que for realizada dentro de um arquivo ou repositório resultará em uma chave SHA1 diferente, garantindo assim o controle e a integridade do projeto.
 
 Os [Objetos fundamentais](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects) são: BLOBS, TREES e COMMITS
 
 Na prática os arquivos são armazenados dentro dos BLOBS esse objeto contém metadados do Git (tipo, tamanho, \0, conteúdo) 
 
-<img src="C:\Users\Aline\AppData\Roaming\Typora\typora-user-images\image-20221006090914704.png" alt="image-20221006090914704" style="zoom:80%;" />
-
 As TREES (árvores) elas armazenam BLOBS e apontam para tipos de BLOBS diferentes, elas também contém metadados (tipo, tamanho, \0, BLOB, SHA1, nome do arquivo ).
-
-![image-20221006090934991](C:\Users\Aline\AppData\Roaming\Typora\typora-user-images\image-20221006090934991.png)
 
 Eles apresentam uma relação de efeito dominó ou seja, qualquer alteração realizada em um arquivo do BLOB para o qual a TREE aponta, resulta na alteração do SHA1 do BLOB e da TREE.
 
 A estrutura das TREES como no exemplo abaixo apontam para: arquivos (README, Rakefile, lib) > BLOBS > TREES > aquivos (Simplegit.rb) > BLOBS
 
-![image-20221006090636349](C:\Users\Aline\AppData\Roaming\Typora\typora-user-images\image-20221006090636349.png)
-
 **Commit** é o objeto mais importante pois ele agrega todos os objetos, sua estrutura contém (tipo, tamanho, TREE, parente, autor, mensagem, timestamp) é neste momento que se coloca a mensagem que vai dar sentido para a alteração que foi feita no seu arquivo. 
 
 Qualquer alteração realizada em um arquivo do BLOB resulta na alteração do SHA1 do BLOB, TREE e do Commit.
-
-![image-20221006092452123](C:\Users\Aline\AppData\Roaming\Typora\typora-user-images\image-20221006092452123.png)
-
-
 
 Chave SSH é uma forma segura e prática de integrar seu servidor local  com o servidor remoto (GitHub), isso permite com que o fluxo de trabalho para a nuvem seja mais rápido sem a necessidade do uso login e senha no GitBash uma vez configurada a chave para a criação da chave é necessário as seguintes etapas:
 
@@ -158,8 +146,6 @@ Arquivos **tracked** tem seu ciclo de vida dentro de três estágios
 2 - **modified**: são arquivos **unmodified** que foram modificados
 
 3 - **staged**: são arquivos que estão prontos para serem commitados
-
-![image-20221006100735040](C:\Users\Aline\AppData\Roaming\Typora\typora-user-images\image-20221006100735040.png)
 
 Na prática os arquivos ficam transitando dentro deste ciclo: cria-se um arquivo *untracked* ele migra direto para  **staged** onde é commitado, após isso ele migra para **unmodified** aqui pode-se remover o arquivo  nesse caso ele migra para o *untracked* novamente ou o arquivo pode ser editado migrando então para o **modified** nesse estágio ele migra para o **staged** novamente, e recomeça todo o ciclo quando ele é commitado.
 
