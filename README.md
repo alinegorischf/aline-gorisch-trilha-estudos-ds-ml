@@ -3,7 +3,7 @@
 
 Nesse primeiro Desafio de Projeto a intenção é praticar os conhecimentos básicos adquiridos no Curso de Introdução ao Git e ao GitHub. Como ideia de projeto foi sugerida pelo professor [Venilton Falvo Jr](https://github.com/falvojr) a criação de um **Primeiro Repositório** contendo anotações das aulas de Git e GitHub a também de outros cursos.
 
-Com isso decidi documentar minha trilha de aprendizado em Ciência de Dados dentro e fora da plataforma da DIO, com cursos obrigatórios para a finalização do Bootcamp e cursos complementares realizados na plataforma da [DIO](https://www.dio.me/) e no [Coursera](https://www.coursera.org/).
+Com isso decidi documentar minha trilha de aprendizado em Ciência de Dados dentro e fora da plataforma da DIO, com cursos obrigatórios para a finalização do Bootcamp e cursos complementares realizados na plataforma da [DIO](https://www.dio.me/) e no [Coursera](https://www.coursera.org/) conforme eu achar necessário.
 
 Link com detalhamento de todo o processo de aprendizado no [Notion](https://fringe-ornament-007.notion.site/23f70047afe546ccb2f9ab31122a0b9f?v=8e5819f2784f4821992c3cf95e50dc9d) essa é uma das melhores ferramentas na minha opinião fica a dica :wink: 
 
