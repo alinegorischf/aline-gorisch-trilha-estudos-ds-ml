@@ -1,5 +1,5 @@
 # Repositório do Desafio de Projeto sobre Git e GitHub da DIO :woman_technologist:
-#### Repositório criado para o primeiro desafio de projeto do [Bootcamp Geração Tech Unimed-BH | Ciência de Dados](https://web.dio.me/track/geracao-tech-unimed-bh-ciencia-de-dados/) :bar_chart:
+### Repositório criado para o primeiro desafio de projeto do [Bootcamp Geração Tech Unimed-BH | Ciência de Dados](https://web.dio.me/track/geracao-tech-unimed-bh-ciencia-de-dados/) :bar_chart:
 
 Nesse primeiro Desafio de Projeto a intenção é praticar os conhecimentos básicos adquiridos no Curso de Introdução ao Git e ao GitHub. Como ideia de projeto foi sugerida pelo professor [Venilton Falvo Jr](https://github.com/falvojr) a criação de um **Primeiro Repositório** contendo anotações das aulas de Git e GitHub a também de outros cursos.
 
