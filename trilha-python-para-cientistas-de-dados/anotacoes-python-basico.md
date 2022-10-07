@@ -149,7 +149,7 @@ com argumento: `>>> help(100)`
 
 saída: retorna a classe, métodos...
 
-
+testetste
 
 
 
