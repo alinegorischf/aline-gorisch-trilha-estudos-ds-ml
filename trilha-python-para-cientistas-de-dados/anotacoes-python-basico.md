@@ -149,9 +149,88 @@ com argumento: `>>> help(100)`
 
 saída: retorna a classe, métodos...
 
-testetste
+### Variáveis e constantes
 
+**Variáveis**
 
+Em linguagens de programação podemos definir valores que podem sofrer alterações a medida que executamos o programa. Esses valores recebem o nome de variáveis, pois nascem com um valor e não necessariamente devem permanecer com o mesmo valor ao longo da execução do programa.
+
+**Alteração de valores**
+
+Não é necessário atribuir o tipo de dado da variável, o Python faz isso automaticamente através do seu interpretador. Por isso não podemos criar uma variável sem atribuir um valor. Para alterar o valor da variável basta fazer uma atribuição de um novo valor.
+
+**Constantes**
+
+São utilizadas para armazenar valores, porém o valor de uma constante se mantém o mesmo até o final da execução do programa, fazendo dele um valor imutável.
+
+**Python não tem constantes**
+
+Não existe uma palavra reservada para informar ao interpretador que o valor é uma constante. Por isso em Python usa-se a convenção que a variável é uma constante. Para fazer isso, deve-se criar a variável com o nome todo em letras maiúsculas.
+
+**Boas práticas**
+
+* O padrão de nome deve ser snake case. (não deixar espaços em branco usar o _)
+* Escolher nomes sugestivos. (que façam sentido pro teu programa)
+* Nome de constantes todo em maíusculo
+
+### Conversão de tipos
+
+**Convertendo tipos**
+
+Em alguns momento será necessário converter o tipo de uma variável para manipular de forma diferente. Por exemplo:
+
+Variáveis do tipo string, que armazenam números e precisamos fazer alguma operação matemática com esse valor.  
+
+**Conversão inteiro para float**
+
+`preco = 10
+print(preco)`
+
+`preco = float(preco)
+print(preco)`
+
+**Conversão float para inteiro**
+
+`preco = 10.30
+print(preco)`
+
+`preco = int(preco)
+print(preco)`
+
+**Conversão por divisão**
+
+`preco = 10
+print(preco)`
+
+**Converter inteiro para número float**
+
+`print(preco / 2)`
+
+**Converter float para número inteiro**
+
+`print(preco // 2)`
+
+**Converter número para string**
+
+`preco = 10.50
+idade = 28`
+
+`print(str(preco))`
+
+`print(str(idade))`
+
+`texto = f"idade {idade}, preco {preco}"`
+
+`print(texto)`
+
+**String para número**
+
+`preco = "10.50"
+idade = "28"`
+
+`print(float(preco))`
+
+`print(int(idade))`
 
 
 
