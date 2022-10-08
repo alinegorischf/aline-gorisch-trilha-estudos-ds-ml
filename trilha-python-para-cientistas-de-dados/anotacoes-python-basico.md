@@ -1,6 +1,6 @@
 # Anotações aulas :memo:
 
-## Curso: Ambiente de Desenvolvimento e Primeiros Passos com Python :computer::snake:
+## Curso: Ambiente de Desenvolvimento e Primeiros Passos com Python :snake:
 
 ### Definindo o ambiente e primeiros passos com Python
 
@@ -47,7 +47,7 @@ link instalação Windows: http://python.org.br/instalacao-windows/
 
 No VsCode instalar as extensões: Python, autoDocstring e intelliCode
 
-## Curso: Conhecendo a Linguagem de Programação Python :tongue::snake:
+## Curso: Conhecendo a Linguagem de Programação Python :snake:
 
 ### Tipos de Dados
 
@@ -536,9 +536,245 @@ print("Java" not in curso)`
 `= False
 = True`
 
+## Curso: Estruturas condicionais e de repetição :snake:
 
+### Indentação e blocos
 
+**A estética**
 
+Indentar código é uma forma de manter o código fonte mais legível e manutenível. Mas em Python ela exerce um segundo papel, através da indentação o interpretador consegue determinar onde um bloco de comando inicia e onde ele termina.
 
+ **Bloco de comando**
 
+As linguagens de programação costumam utilizar caracteres ou palavras reservados para determinar o início e fim do bloco. 
+
+**Utilizando espaços**
+
+Existe uma convenção em Python, que define as boas práticas para escrita de código na linguagem. Nesse documento é indicado utilizar 4 espaços em branco por nível de indentação, ou seja a cada novo bloco adicionamos 4 novos esoaços.
+
+`def sacar(valor):
+    saldo = 500`
+
+    if saldo >= valor:
+        print("Valor sacado")
+        print("retire o dinheiro na boca do caixa")
+    
+    print("Obrigado por ser nosso cliente!")
+
+`sacar(10)`
+
+### Estruturas condicionais
+
+A estrutura condicional permite o desvio de fluxo de controle, quando determinadas expressões lógicas são atendidas.
+
+**if**
+
+Para criar uma estrutura condicional simples, composta por um único desvio, podemos utilizar a palavra reservada **if**. O comando irá testar a expressão lógica, e em caso de retorno verdadeiro as ações presentes no bloco de código do if serão executadas.
+
+`MAIOR_IDADE = 18
+    idade = int(input("Informe sua idade: "))`
+
+    if idade >= 18:
+        print("Maior de idade, pode tirar a CNH.")
+        
+    if idade < 18:
+        print("Ainda não pode tirar CNH.")   
+
+**if / else**
+
+Para criar uma estrutura condicional com dois desvios, podemos utilizar as palavras reservadas **if** e **else**. Como sabemos se a expressão lígica testada no **if** for verdadeira, então o bloco de código do **if** será executado. Caso contrário o bloco de código **else** será executado
+
+`MAIOR_IDADE = 18
+    idade = int(input("Informe sua idade: "))`
+
+    if idade >= 18:
+        print("Maior de idade, pode tirar a CNH.")
+        
+    else:
+        print("Ainda não pode tirar CNH.")   
+
+**if / elif / else**
+
+Em alguns casos queremos mais que dois desvios, para isso podemos utilizar a palavra reservada **elif**. O **elif** é composto por uma nova expressão lógica, que será testada e caso retorne verdadeiro o bloco de código do **elif** será executado. Não existe um número máximo de elifs que podemos utilizar, porém evite criar grandes estruturas condicionais, pois elas aumentam a complexidade do código.
+
+`MAIOR_IDADE = 18
+ IDADE_ESPECIAL = 17`
+
+`idade = int(input("Informe sua idade: "))`
+
+    if idade >= 18:
+        print("Maior de idade, pode tirar a CNH.")
+        
+    elif idade == IDADE_ESPECIAL:
+        print("Pode fazer aulas teóricas, mas não pode fazer aulas práticas.")
+        
+    else:
+        print("Ainda não pode tirar CNH.") 
+
+**Estrutura condicional aninhada (if aninhado)**
+
+Podemos criar estruturas condicionais aninhadas, para isso basta adicionar estruturas uf/elif/else dentro do bloco de código de estruturas if/elif/else.
+
+`conta_normal = False
+conta_universitária = False
+conta_especial = True`
+
+`saldo = 2000
+saque = 1500
+cheque_especial = 450`
+
+    if conta_normal:
+    
+        if saldo >= saque:
+            print("Saque realizado com sucesso!")
+    
+        elif saque <= (saldo + cheque_especial):
+            print("Saque realizado com uso do cheque especial!")
+    
+        else: 
+            print("Não foi possível realizar o saque, saldo insuficiente!")
+    
+    elif conta_universitária:
+    
+        if saldo >= saque:
+            print("Saque realizado com sucesso!")
+    
+        else:
+            print("Saldo insuficiente!")
+        
+    elif conta_especial:
+            print("Conta especial selecionada!")
+    
+    else:
+        print("Sistema não reconheceu seu tipo de conta, entre em contato com seu gerente!")
+
+**Estrutura condicional  (if ternário)**
+
+O **if** ternário permite escrever uma condição em uma única linha. Ele é composto por três partes, a primeira parte é o retorno caso e a expressão retorne verdadeiro, a segunda parte é a expressão lógica e a terceira parte é o retorno caso a expressão não seja atendida.
+
+`saldo = 2000
+saque = 1500`
+
+    status = "Sucesso" if saldo >= saque else "Falha"
+    
+    print(f"{status} ao realizar o saque!")
+
+### Estruturas de repetição
+
+São estruturas utilizadas para repetir um trecho de código um determinado número de vezes. Esse numero pode ser conhecido previamente ou determinado através de uma expressão lógica.
+
+ **Estruturas de repetição Comando for **
+
+O comando for é usado para percorrer um objeto iterável. Faz sentido usar quando sabemos o número exato de vezes que nosso bloco de código deve ser executado, ou quando queremos percorrer um objeto iterável.
+
+`texto = input("Informe um texto: ")
+VOGAIS = "AEIOU"`
+
+    for letra in texto:
+        if letra.upper() in VOGAIS:
+            print(letra, end="")
+    
+    print() # adiciona uma quebra de linha
+
+**Estruturas de repetição Comando for / else**
+
+exe: utilizando um iterável
+
+`texto = input("Informe um texto: ")
+VOGAIS = "AEIOU"`
+
+    for letra in texto:
+        if letra.upper() in VOGAIS:
+            print(letra, end="")
+            
+    else:
+    	print() # adiciona uma quebra de linha
+    	print("Executa no final do laço")
+
+**Estruturas de repetição Função range**
+
+Range é uma função built-in do Python, ela é usada para produzir uma sequencia de números inteiros a partir de um início (inclusivo) para um fim (exclusivo). Se usarmos (i, j) será produzido:
+
+i, i+1, i+2, i+3....., j+1.
+
+Ela recebe 3 argumentos: stop (obrigatório), start (opcional) e step opcional.
+
+exe: utilizando a função built-in range
+
+`for numero in range(0, 51, 5):
+    print(numero, end=" ")`
+
+**Estruturas de repetição Comando while**
+
+O comando while é usado para repetir um bloco de código várias vezes. Faz sentido usar while quando não sabemos o número exato de vezes que nosso bloco de código deve ser executado.
+
+exe: utilizando a função while
+
+`opcao = -1`
+
+    while opcao != 0:
+        opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair\n: "))
+    
+        if opcao == 1:
+            print("Sacando...")
+    
+        elif opcao == 2:
+            print("Exibindo o extrato...")
+
+exe: utilizando a função while / else
+
+`opcao = -1`
+
+    while opcao != 0:
+        opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair\n: "))
+    
+        if opcao == 1:
+            print("Sacando...")
+    
+        elif opcao == 2:
+            print("Exibindo o extrato...")
+    else:
+        print("Obrigado por usar nosso sistema bancário, até logo!")
+
+**Estruturas de repetição Comando Break**
+
+Ele para o laço de repetição no momento em que a condição for atendida
+
+    while True:
+        numero = int(input("Informe um número: "))
+        
+        if numero == 10:
+           break
+    
+        print(numero)
+    
+    for numero in range(100):
+    
+        if numero == 15:
+          break
+    
+        print(numero, end=" ")
+
+**Estruturas de repetição Comando Continue**
+
+Ele pula a execução 
+
+    for numero in range(100):
+    
+        if numero % 2 == 0:
+            continue
+    
+        print(numero, end=" ")
+
+**Estruturas de repetição Comando Break e Continue no while**
+
+    while True:
+        numero = int(input("Informe um número: "))
+    
+        if numero == 10:
+            break
+        if numero % 2 == 0:
+            continue
+         
+        print(numero)
 
