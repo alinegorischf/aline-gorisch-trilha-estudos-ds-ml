@@ -49,8 +49,6 @@ No VsCode instalar as extensões: Python, autoDocstring e intelliCode
 
 ## Curso: Conhecendo a Linguagem de Programação Python :tongue::snake:
 
-## :snake:
-
 ### Tipos de Dados
 
 Os tipos de dados servem para definir as características  e os comportamentos de um valor (objeto) para o interpretador, ou seja o número (objeto) 10 é do tipo int e com ele eu consigo realizar operações matemáticas, outra caracterista é em relação ao armazenamento ou seja quanto de memória esse objeto irá consumir.
@@ -254,4 +252,293 @@ print(nome, sobrenome, sep="#")`
 `>>>João Andrade
 ´>>>João Andrade
 ´>>>João#Andrade`
+
+## Curso: Tipo de operadores :snake:
+
+### Operadores Aritméticos
+
+**Conhecendo os operadores aritméticos**
+
+Os operadores aritméticos executam operações matemáticas, como adição, subtração com operandos. Exe..
+
+**Variáveis**
+
+``produto_1 = 20
+produto_2 = 10`
+
+**Adição**
+
+`print(produto_1 + produto_2)`
+
+= 30
+
+**Subtração**
+
+`print(produto_1 - produto_2)`
+
+= 10
+
+**Divisão**
+
+`print(produto_1 / produto_2)`
+
+= 2.0
+
+**Divisão inteira**
+
+`print(produto_1 // produto_2)`
+
+= 2
+
+**Multiplicação**
+
+`print(produto_1 * produto_2)`
+
+= 200
+
+**Exponenciação**
+
+`print(produto_1 ** produto_2)`
+
+= 10240000000000
+
+**Módulo é o resto da divisão**
+
+`print(produto_1 % produto_2)`
+
+= 0 
+
+**Precedência dos operadores**
+
+Na matemática existe uma regra que indica quais operações devem ser executadas primeiro. Isso é útil pois ao analisar uma expressão os valores podem mudar dependendo da ordem das operações.
+
+ x = 10 - 5 * 2
+
+x é igual a 0 ou 10?
+
+x = 10 - ( 5 * 2 )
+
+x = 0
+
+A definição indica a seguinte ordem como a correta:
+
+* Parêntesis
+* Expoentes
+* Multiplicações de divisões (da esquerda para a direita)
+* Somas e subtrações (da esquerda para a direita)
+
+### Operadores de comparação
+
+São operadores utilizados para comparar dois valores
+
+**Variáveis**
+
+`saldo = 200
+saque = 200`
+
+**Igualdade**
+
+`print(saldo == saque)`
+
+= True
+
+**Diferença**
+
+`print(saldo != saque)`
+
+= False
+
+**Maior que / maior ou igual**
+
+`print(saldo > saque)
+print(saldo >= saque)`
+
+= False
+
+= True
+
+**Menor que / menor ou igual**
+
+`print(saldo < saque)
+print(saldo <= saque)`
+
+= False
+
+= True
+
+### Operadores de atribuição
+
+São operadores utilizados para definir o valor inicial ou sobrescrever o valor de uma variável
+
+**Atribuição simples**
+
+`saldo = 200
+print(saldo)`
+
+= 200
+
+**Atribuição com adição**
+
+`saldo += 10
+print(saldo)`
+
+= 210
+
+**Atribuição com subtração**
+
+`saldo -= 5
+print(saldo)`
+
+= 205
+
+**Atribuição com divisão inteira**
+
+`saldo //= 2
+print(saldo)`
+
+= 102
+
+**Atribuição com divisão**
+
+`saldo /= 2
+print(saldo)`
+
+= 51.0
+
+**Atribuição com multiplicação**
+
+`saldo *= 10
+print(saldo)`
+
+= 510.0
+
+**Atribuição com módulo**
+
+`saldo %= 4
+print(saldo)`
+
+= 2.0
+
+**Atribuição com exponenciação**
+
+`saldo **= 2
+print(saldo)`
+
+= 4.0
+
+### Operadores lógicos
+
+São operadores utilizados em conjunto com os operadores de comparação, para montar uma expressão lógica. Quando um operador de comparação é utilizado, o resultado retornado é um booleano, dessa forma podemos combinar operadores de comparação com os operadores lógicos, exemplo:
+
+op_comparacao_ + op_logico + op_comparacao...N...
+
+**Operador E (para ser verdadeiro é necessário que TODAS as operações sejam verdadeiras e para ser falso é necessário que apenas UMA das operações sejam falsas)**
+
+`print(True and True and True)
+print(True and False and True)
+print(False and False and False)`
+
+= True
+
+= False
+
+= False
+
+**Operador OU (para ser verdadeiro é necessário que UMA das operações sejam verdadeiras e para ser falso é necessário que TODAS as operações sejam falsas) **
+
+`print(True or True or True)
+print(True or False or False)
+print(False or False or False)`
+
+= True
+
+= True
+
+= False
+
+**Exemplo**
+
+`saldo = 1000
+saque = 250
+limite = 200`
+`conta_especial = True`
+
+`exp_1 = saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+print(exp_1)`
+
+`exp_2 = (saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque)
+print(exp_2)`
+
+`= True
+= True`
+
+**Boas práticas para construção de operadores de comparação **
+
+`conta_normal_com_saldo_suficiente = saldo >= saque and saque <= limite
+conta_especial_com_saldo_suficiente = conta_especial and saldo >= saque`
+
+`exp_3 = conta_normal_com_saldo_suficiente or conta_especial_com_saldo_suficiente`
+
+`print(exp_3)`
+
+`= True`
+
+**Obs:**
+
+Operador de negação (a negação de falso é verdadeiro e a negação de verdadeiro é falso)
+
+Parênteses (os parênteses servem para delimitar a precedência da execução de comparação entre operações lógicas ).
+
+### Operadores de identidade
+
+São operadores utilizados para comparar se dois objetos testados ocupam a mesma posição na memória.
+
+`saldo = 1000
+limite = 500`
+
+`print( saldo is limite)
+print(saldo is not limite)`
+
+`= True
+= False`
+
+`saldo = 1000
+limite = 1000`
+
+`print( saldo is limite)
+print(saldo is not limite)`
+
+`= True
+= False`
+
+### Operadores de associação
+
+São operadores utilizados para verificar se um objeto está presente em uma sequência. 
+
+**Exemplos**
+
+`frutas = ["limao", "uva"]
+curso = "Curso de Python"`
+
+Para verificar se um objeto **está** presente
+
+`print("laranja" in frutas)
+print("Python" in curso)`
+
+`= False
+= True`
+
+Para verificar se um objeto **não está** presente
+
+`print("limao" not in frutas)
+print("Java" not in curso)`
+
+`= False
+= True`
+
+
+
+
+
+
 
