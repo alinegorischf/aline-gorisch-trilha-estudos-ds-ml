@@ -536,6 +536,14 @@ print("Java" not in curso)`
 `= False
 = True`
 
+**REFERÊNCIAS**
+
+https://docs.python.org/3/library/stdtypes.html
+
+https://wiki.python.org.br/ModoInterativohttps://docs.python.org/3/library/functions.html#input
+
+https://docs.python.org/3/library/functions.html#print
+
 ## Curso: Estruturas condicionais e de repetição :snake:
 
 ### Indentação e blocos
@@ -778,3 +786,151 @@ Ele pula a execução
          
         print(numero)
 
+## Curso: Dominando Strings e Fatiamento :snake:
+
+### Conhecendo métodos úteis da classe string
+
+A classe String do Python é famosa por ser rica em métodos e possuir uma interface muito fácil de trabalhar. 
+
+Em algumas linguagens manipular sequencias de caracteres não é um trabalho trivial, porém, em python esse trabalho é muito simples.
+
+**Maiúscula, minúscula e título**
+
+exemplo: "PytHon"
+
+Maiúscula
+
+print(nome.upper())
+
+= PYTHON
+
+Minúscula
+
+print(nome.lower())
+
+= python
+
+Título
+
+print(nome.title())
+
+= Python
+
+**Eliminando espaços em branco**
+
+exemplo: 
+
+nome = "	Python  "
+
+Remover espaço em branco da esquerda e da direita
+
+print(nome.strip())
+
+= Python
+
+Remover espaço em branco da esquerda
+
+print(nome.lstrip())
+
+= "Python  "
+
+Remover espaço em branco da direita
+
+print(nome.rstrip())
+
+= "	Python"
+
+**Junções e centralização**
+
+Centralizado: é necessário colocar o argumento de quantos números vc deseja colocar que pode ser o número de caracteres da variável + quantos números desejar o segundo argumento é opcional se não for preenchido o valor irá retornar com espaço em branco.
+
+print(nome.center(10, "#")) ou print(nome.center(10))
+
+​          = "##Python##"             ou        = "   Python   "    
+
+Junções: é necessário colocar como argumento o caractere que será adicionado a string (é mais comum em listas)
+
+print( " . " . join(curso))
+
+= "P.y.t.h.o.n"
+
+### Interpolação de variáveis
+
+Há duas forma recomendadas de interpolar variáveis em string, a primeira é utilizando o método **format** e a segunda é utilizando  o **f strings**
+
+**Método Old style % (não é recomendado o uso**
+
+    nome = "Aline"
+    idade = 31
+    
+    saldo = 45.435
+    
+    dados = {"nome": "Aline", "idade": 31}
+    
+    Old Style %
+    # print("Nome: %s Idade: %d" % (nome, idade))
+    
+    # Método Formta
+    # print("Nome: {} Idade: {}".format(nome, idade))
+    # print("Nome: {0} Idade: {1}".format(nome, idade))
+    # print("Nome: {nome} Idade: {idade}".format(nome=nome, idade=idade))
+    # print("Nome: {nome} Idade: {idade}".format(**dados))
+    
+    # Método f strings
+    print(f"Nome: {nome} Idade: {idade} saldo: {saldo:.2f}")
+
+**Método format**
+
+    nome = "Aline"
+    idade = 31
+    
+    dados = {"nome": "Aline", "idade": 31}
+    
+     Método Formta
+     print("Nome: {} Idade: {}".format(nome, idade))
+     print("Nome: {0} Idade: {1}".format(nome, idade))
+     print("Nome: {nome} Idade: {idade}".format(nome=nome, idade=idade))
+     print("Nome: {nome} Idade: {idade}".format(**dados))
+
+**Método f strings (melhores práticas)**
+
+    nome = "Aline"
+    idade = 31
+    profissao = "Geógrafa"
+    linguagem = "Python"
+    
+    saldo = 45.435
+    
+    # Método f strings
+    print(f"Nome: {nome} Idade: {idade} saldo: {saldo:.2f}")
+
+### Fatiamento de string
+
+Fatiamento de string é uma técnica utilizada para retornar substrings (partes da string original), informando inicio (start), fim (stop) e passo (step): [start: stop[, step]].
+
+    nome = "Aline Gorisch Ferreira"
+    
+    print(nome[0])
+    print(nome[:6])
+    print(nome[6:22])
+    print(nome[0:14:2])
+    print(nome[::-1])
+    print(nome[-1])
+
+### strings (triplas) múltiplas linhas
+
+Strings de múltiplas linhas são definidas informados 3 aspas simples ou duplas durante a atribuição. Elas podem ocupar várias linhas do código, e todos os espaços em branco são incluídos na string final.
+
+    nome = "Aline"
+    
+    mensagem = f'''
+    Olá meu nome é {nome},
+    estou aprendendo python
+    '''
+    print(mensagem)
+    
+    mensagem = f"""
+    	Olá meu nome é {nome},
+    estou aprendendo python
+    """
+    print(mensagem)
