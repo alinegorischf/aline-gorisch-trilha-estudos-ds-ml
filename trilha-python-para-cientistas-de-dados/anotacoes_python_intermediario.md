@@ -150,7 +150,7 @@ lista aplicando alguma modificação nos elementos de uma lista existente.
 
 `quadrado = [numero ** 2 for numero in numeros]`
 
-## Métodos da classe list
+### Métodos da classe list
 
 **[].append**
 
@@ -307,3 +307,26 @@ O sorted é uma função que serve para ordenar iteraveis. (é basicamente a mes
 `sorted(linguagens, key=lambda x: len(x))  # ["c", "js", "java", "python", "csharp"]`
 
 `sorted(linguagens, key=lambda x: len(x), reverse=True)  # ["python", "csharp", "java", "js", "c"]`
+
+## Conhecendo Tuplas em Python
+### Criando Tuplas
+Tuplas são estruturas de dados muito parecidas com as listas, a principal diferença é que tuplas são imutáveis enquanto lsitas são mutáveis. podemos criar tuplas através da classe **tuple**, ou colocando valores separados por vírgulas de parenteses.
+
+**exe:**
+
+`frutas = ("laranja", "pera", "uva",)`
+
+`letras = tuple("python")`
+
+`numeros = tuple([1, 2, 3, 4])`
+
+`pais = ("Brasil",)`
+
+
+
+
+### Métodos da classe tupla
+
+
+
+
