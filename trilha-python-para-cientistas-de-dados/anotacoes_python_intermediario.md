@@ -156,6 +156,8 @@ lista aplicando alguma modificação nos elementos de uma lista existente.
 
 O método append é utilizado para adicionar um novo objeto a uma lista existente
 
+**exe:**
+
 `lista = []`
 
 `lista.append(1)`
@@ -170,6 +172,8 @@ O método append é utilizado para adicionar um novo objeto a uma lista existent
 
 O método clear é utilizado para apagar todos os objetos contidos em uma lista
 
+**exe:**
+
 `lista = [1, "Python", [40, 30, 20]]`
 
 `print(lista)  # [1, "Python", [40, 30, 20]]`
@@ -181,6 +185,8 @@ O método clear é utilizado para apagar todos os objetos contidos em uma lista
 **[].copy**
 
 O método copy é utilizado para retornar uma lista idêntica a lista original, podendo assim fazer alterações na lista copiada mantendo a original.
+
+**exe:**
 
 `lista = [1, "Python", [40, 30, 20]]`
 
@@ -200,6 +206,8 @@ O método copy é utilizado para retornar uma lista idêntica a lista original, 
 
 O método count é utilizado para saber quantas vezes um determinado objeto aparece na lista
 
+**exe:**
+
 `cores = ["vermelho", "azul", "verde", "azul"]`
 
 `cores.count("vermelho")  # 1`
@@ -211,6 +219,8 @@ O método count é utilizado para saber quantas vezes um determinado objeto apar
 **[].extend**
 
 O método extend é utlizado para adicionar vários objetos ao mesmo tempo em uma lista existente porém ele não exclui valores duplicados.
+
+**exe:**
 
 `linguagens = ["python", "js", "c"]`
 
@@ -224,6 +234,8 @@ O método extend é utlizado para adicionar vários objetos ao mesmo tempo em um
 
 O método index é utilizado para se ter conhecimento em que posição os objetos se encontram ( ele retorna somente a primeira ocorrência de um objeto).
 
+**exe:**
+
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
 `linguagens.index("java")  # 3`
@@ -233,6 +245,8 @@ O método index é utilizado para se ter conhecimento em que posição os objeto
 **[].pop**
 
 O método pop é utilizado para retirar o último elemento da lista, porém pode se passar o indice de qual objeto se quer remover.
+
+**exe:**
 
 linguagens = ["python", "js", "c", "java", "csharp"]
 
@@ -248,6 +262,8 @@ linguagens = ["python", "js", "c", "java", "csharp"]
 
 O método remove é utilizado para remover um objeto de uma lista, nesse caso diferente do pop se utiliza o próprio objeto.
 
+**exe:**
+
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
 `linguagens.remove("c")`
@@ -258,6 +274,8 @@ O método remove é utilizado para remover um objeto de uma lista, nesse caso di
 
 O método reverse é utilizado para fazer com que uma lista fique ao contrário
 
+**exe:**
+
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
 `linguagens.reverse()`
@@ -267,6 +285,8 @@ O método reverse é utilizado para fazer com que uma lista fique ao contrário
 **[].sort**
 
 O método sort é utilizado para ordenar uma lista
+
+**exe:**
 
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
@@ -294,6 +314,8 @@ Utilizando a combinação de **(key=lambda x:len(x)) com o reverse=True** ele or
 
 O método len é utilizado para saber a quantidade de objetos contidos em uma lista
 
+**exe:**
+
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
 `len(linguagens)  # 5`
@@ -301,6 +323,8 @@ O método len é utilizado para saber a quantidade de objetos contidos em uma li
 **sorted**
 
 O sorted é uma função que serve para ordenar iteraveis. (é basicamente a mesmo que o [].sort porém aqui ele se apresenta como uma função)
+
+**exe:**
 
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
@@ -322,11 +346,104 @@ Tuplas são estruturas de dados muito parecidas com as listas, a principal difer
 
 `pais = ("Brasil",)`
 
+#### Acesso direto
+A tupla é uma sequência, portanto podemos acessar seus dados utilizando índices. Contamos o índice de determinada sequência a partir do zero.
 
+**exe:**
 
+`frutas = ["maçã", "laranja", "uva", "pera"]`
+
+`frutas[0]  # maçã`
+
+`frutas[2]  # uva`
+
+#### Indíces negativos
+
+Sequências suportam indexação negativa. A contagem começa em -1.
+
+**exe:**
+
+`frutas = ["maçã", "laranja", "uva", "pera"]`
+
+`frutas[-1]  # pera`
+
+`frutas[-3]  # laranja`
+
+#### Tuplas aninhadas
+Tuplas podem armazenar todos os tipos de objetos em Python, portanto podemos ter tuplas que armazenam outras tuplas. Com isso podemos criar estruturas bidimensionais (tabelas), e acessar informando os índices de linha e coluna.
+
+**exe:**
+
+`matriz = [`
+
+`[1, "a", 2],`
+
+`["b", 3, 4],`
+
+`[6, 5, "c"]`
+
+`]`
+
+`matriz[0]  # [1, "a", 2]`
+
+`matriz[0][0]  # 1`
+
+`matriz[0][-1]  # 2`
+
+`matriz[-1][-1]  # "c"`
+#### Fatiamento
+Além de acessar elementos diretamente, podemos extrair um conjunto de valores de uma sequência. Para isso basta passar o índice inicial e/ou final para acesssar o conjunto. Podemos ainda informar quantas posições o cursor deve "pular" no acesso.
+
+**exe:**
+
+`lista = ["p", "y", "t", "h", "o", "n"]`
+
+`lista[2:]  # ["t", "h", "o", "n"]`
+
+`lista[:2]  # ["p", "y"]`
+
+`lista[1:3]  # ["y", "t"]`
+
+`lista[0:3:2]  # ["p", "t"]`
+
+`lista[::]  # ["p", "y", "t", "h", "o", "n"]`
+
+`lista[::-1]  # ["n", "o", "h", "t", "y", "p"]`
 
 ### Métodos da classe tupla
 
+**[].count**
 
+O método count é utilizado para saber quantas vezes um determinado objeto aparece na lista
 
+**exe:**
 
+`cores = ["vermelho", "azul", "verde", "azul"]`
+
+`cores.count("vermelho")  # 1`
+
+`cores.count("azul")  # 2`
+
+`cores.count("verde")  # 1`
+
+**[].index**
+
+O método index é utilizado para se ter conhecimento em que posição os objetos se encontram ( ele retorna somente a primeira ocorrência de um objeto).
+
+**exe:**
+
+`linguagens = ["python", "js", "c", "java", "csharp"]`
+
+`linguagens.index("java")  # 3`
+
+`linguagens.index("python")  # 0`
+
+**[].len**
+
+**exe:**
+
+O método len é utilizado para saber a quantidade de objetos contidos em uma lista
+
+`linguagens = ["python", "js", "c", "java", "csharp"]`
+
+`len(linguagens)  # 5`
