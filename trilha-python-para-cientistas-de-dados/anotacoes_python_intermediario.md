@@ -791,10 +791,13 @@ O método **clear** apaga todos os valores do dicionário
 
 `contatos = {`
 
-    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
-    "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
-    "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
-    "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},
+     `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},`
+    
+     `"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},``
+    
+    `"chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},```
+    
+    `"melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
 `}`
 `contatos.clear()`
 `contatos  # {}`
@@ -806,14 +809,17 @@ O método **copy** ele faz uma cópia do dicionário
 **exe:**
 
 `contatos = {`
-    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}`
+    
+    `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}`
 `}`
 
 `copia = contatos.copy()`
 
-copia["guilherme@gmail.com"] = {"nome": "Gui"}
-contatos["guilherme@gmail.com"]  # {"nome": "Guilherme", "telefone": "3333-2221"}
-copia["guilherme@gmail.com"]  # {"nome": "Gui"}`
+`copia["guilherme@gmail.com"] = {"nome": "Gui"}`
+
+`contatos["guilherme@gmail.com"]  # {"nome": "Guilherme", "telefone": "3333-2221"}`
+
+`copia["guilherme@gmail.com"]  # {"nome": "Gui"}`
 
 **{}.fromkeys**
 
@@ -831,15 +837,18 @@ O método **get** acessa valores do dicionário
 
 **exe:**
 
-vcontatos = {`
-    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}`
-}
+`contatos = {`
+
+    `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}`
+`}`
+
 `contatos["chave"]  # KeyError`
 
-contatos.get("chave")  # None
-contatos.get("chave", {})  # {}
-contatos.get("guilherme@gmail.com", {})  # {"guilherme@gmail.com": {"nome":
-"Guilherme", "telefone": "3333-2221"}`
+`contatos.get("chave")  # None`
+
+`contatos.get("chave", {})  # {}`
+
+`contatos.get("guilherme@gmail.com", {})  # {"guilherme@gmail.com": {"nome":"Guilherme", "telefone": "3333-2221"}`
 
 **{}.items**
 
@@ -848,8 +857,11 @@ O método **items** retorna todos os valores do dicionario e as chaves
 **exe:**
 
 `contatos = {`
-    "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+
+    `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+    
 `}`
+
 `contatos.items()  # dict_items([('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})])`
 
 **{}.keys**
@@ -858,8 +870,11 @@ O método **keys** retorna todos os valores das chaves somente
 
 **exe:**
 `contatos = {`
-    `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}``
+
+    `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+    
 `}`
+
 `contatos.keys()  # dict_keys(['guilherme@gmail.com'])`
 
 **{}.pop**
@@ -869,9 +884,13 @@ O método **pop** remove um valor do dicionário e retorna esse valor se caso el
 **exe:**
 
 `contatos = {`
+
    `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+   
 `}`
+
 `contatos.pop("guilherme@gmail.com")  # {'nome': 'Guilherme', 'telefone': '3333-2221'}`
+
 `contatos.pop("guilherme@gmail.com", {})  # {}`
 
 **{}.popitem**
@@ -881,9 +900,12 @@ O método **popitem** remove os items de um dicionário na sequencia
 **exe:**
 
 `contatos = {`
+
      `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
 `}`
+
 `contatos.popitem()  # ('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})`
+
 `contatos.popitem()  # KeyError`
 
 **{}.setdefault**
@@ -895,9 +917,11 @@ O método **setdefault** se caso o valor de chave ja existir ele não adiciona, 
 ``contato = {'nome': 'Guilherme', 'telefone': '3333-2221'}`
 
 `contato.setdefault("nome", "Giovanna")  # "Guilherme"`
+
 `contato  # {'nome': 'Guilherme', 'telefone': '3333-2221'}`
 
 `contato.setdefault("idade", 28)  # 28`
+
 `contato  # {'nome': 'Guilherme', 'telefone': '3333-2221', 'idade': 28}`
 
 **{}.update**
@@ -907,13 +931,17 @@ O método **update** permite que o dicionário seja atualizado com outros dicion
 **exe:**
 
 `contatos = {`
+
    `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+   
 `}`
 
 `contatos.update({"guilherme@gmail.com": {"nome": "Gui"}})`
+
 `contatos  # {'guilherme@gmail.com': {'nome': 'Gui'}}`
 
 `contatos.update({"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3322-8181"}})`
+
 `contatos  # {'guilherme@gmail.com': {'nome': 'Gui'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': '3322-8181'}}`
 
 **{}.values**
@@ -923,13 +951,17 @@ O método **values** retorna todos os valores do dicionário.
 **exe:**
 
 `contatos = {`
-    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
-    "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
-    "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
-    "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
+
+    `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},`
+    
+    `"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},`
+    
+    `"chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},`
+    
+    `"melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
 `}`
 
-`contatos.values()  # dict_values([{'nome': 'Guilherme', 'telefone': '3333-2221'}, {'nome': 'Giovanna', 'telefone': '3443-2121'}, {'nome':` `'Chappie', 'telefone': '3344-9871'}, {'nome': 'Melaine', 'telefone': '3333-7766'}])`
+`contatos.values()  # dict_values([{'nome': 'Guilherme', 'telefone': '3333-2221'}, {'nome': 'Giovanna', 'telefone': '3443-2121'}, {'nome': 'Chappie', 'telefone': '3344-9871'}, {'nome': 'Melaine', 'telefone': '3333-7766'}])`
 
 **in**
 
@@ -937,17 +969,24 @@ O método **in** verifica se um determinado valor é uma chave em um determinado
 
 **exe:**
 `contatos = {`
-   "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
-   "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
-   "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
-   "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},
+
+   `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},`
+   
+   `"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},`
+   
+   `"chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},`
+   
+   `"melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
    
 `}`
 
-"guilherme@gmail.com" in contatos  # True
-"megui@gmail.com" in contatos  # False
-"idade" in contatos["guilherme@gmail.com"]  # False
-"telefone" in contatos["giovanna@gmail.com"]  # True`
+`"guilherme@gmail.com" in contatos  # True`
+
+`"megui@gmail.com" in contatos  # False`
+
+`"idade" in contatos["guilherme@gmail.com"]  # False`
+
+`"telefone" in contatos["giovanna@gmail.com"]  # True`
 
 **del**
 
@@ -956,17 +995,26 @@ O método **del** apaga valores do dicionário
 **exe:**
 
 `contatos = {`
-    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
-    "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
-    "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
-    "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
+
+    `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},`
+    
+    `"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},`
+    
+    `"chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},`
+    
+    `"melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
 `}`
 
-`del contatos["guilherme@gmail.com"]["telefone"]
+`del contatos["guilherme@gmail.com"]["telefone"]`
+
 `del contatos["chappie@gmail.com"] `
 
 `contatos # {'guilherme@gmail.com': {'nome': 'Guilherme'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': 3443-2121'},`'melaine@gmail.com': {'nome': 'Melaine', 'telefone': '3333-7766'}}`
 
+# Curso 10: Dominando Funções em Python 🐍 📝
+## Dominando Funções Python
+### Funções Python - Parte 01
+### Funções Python - Parte 02
 
 
 
