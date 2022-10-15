@@ -447,3 +447,281 @@ O método len é utilizado para saber a quantidade de objetos contidos em uma li
 `linguagens = ["python", "js", "c", "java", "csharp"]`
 
 `len(linguagens)  # 5`
+
+## Explorando conjuntos
+
+### Como crair conjuntos
+
+Um **set** é uma coleção que não possui objetos repetidos, usamos sets para representar conjuntos matemáticos ou eliminar itens duplicados de um iterável.
+
+**exe:**
+
+`set([1, 2, 3, 1, 3, 4])  # {1, 2, 3, 4}`
+
+`set("abacaxi")  # {"b", "a", "c", "x", "i"}`
+
+`set(("palio", "gol", "celta", "palio"))  # {"gol", "celta", "palio"}`
+
+#### Acessando os dados
+
+Conjuntos em Python não suportam indexação e nem fatiamento, caso queira acessar os seus valores é necessário **converter** o conjunto para lista.
+
+**exe:**
+
+`numeros = {1, 2, 3, 2}`
+
+`numeros = list(numeros)`
+
+`numeros[0]`
+
+#### Iterar conjuntos
+
+A forma mais comum para percorrer os dados de um conjunto é utilizando o comando **for**
+
+**exe:** 
+
+`carros = {"gol", "celta", "palio"}`
+
+`for carro in carros:`
+
+`print(carro)`
+
+#### Função enumerate
+
+Às vezes é necessário saber qual índice do objeto dentro do laço **for**. Para isso podemos usar a função **enumerate.**
+
+*exe:**
+
+`carros = {"gol", "celta", "palio"}`
+
+`for indice, carro in enumerate(carros):``
+
+`print(f"{indice}: {carro}")`
+
+
+### Métodos da classe set
+
+**{}.union**
+
+O método **union** é utlizado para fazer a junção de dois conjuntos
+
+**exe:**
+
+`conjunto_a = {1, 2}`
+
+`conjunto_b = {3, 4}`
+
+`conjunto_a.union(conjunto_b)  # {1, 2, 3, 4}`
+
+![image](https://user-images.githubusercontent.com/112986146/195988713-c23569bf-3f35-4eff-86c9-6ec54536d68f.png)
+
+**{}.intersection**
+
+O método **intersection** é utlizado para ver a intersecção de dois conjuntos
+
+**exe:**
+
+`conjunto_a = {1, 2, 3}`
+
+`conjunto_b = {2, 3, 4}`
+
+`conjunto_a.intersection(conjunto_b)  # {2, 3}`
+
+![image](https://user-images.githubusercontent.com/112986146/195988851-e2822129-6f20-49a4-8762-9c1b4a655e27.png)
+
+**{}.difference**
+
+O método **difference** é utlizado para ver tudo o que está em um conjunto mas que não aparece no outro conjunto
+
+**exe:**
+
+`conjunto_a = {1, 2, 3}`
+
+`conjunto_b = {2, 3, 4}`
+
+`conjunto_a.difference(conjunto_b)  # {1}`
+
+`conjunto_b.difference(conjunto_a)  # {4}`
+
+![image](https://user-images.githubusercontent.com/112986146/195988971-df0b58f0-83dc-4a79-a63b-0397382250d5.png)
+
+**{}.symmetric_difference**
+
+O método **symmetric_ddifference** é utlizado para ver todos os elementos que não se econtram na intersecção
+
+**exe:**
+
+`conjunto_a = {1, 2, 3}`
+
+`conjunto_b = {2, 3, 4}`
+
+`conjunto_a.symmetric_difference(conjunto_b)  # {1, 4}`
+
+![image](https://user-images.githubusercontent.com/112986146/195989083-76475fee-a89e-4468-8e2e-cf8b398a2813.png)
+
+**{}.issubset**
+
+O método **issubset** é utilizado para verificar pertencimentos de conjuntos e o seu resultado será booleano 
+
+**exe:**
+
+`conjunto_a = {1, 2, 3}`
+
+`conjunto_b = {4, 1, 2, 5, 6, 3}`
+
+`conjunto_a.issubset(conjunto_b)  # True`
+
+`conjunto_b.issubset(conjunto_a)  # False`
+
+
+![image](https://user-images.githubusercontent.com/112986146/195989307-3104fd3d-8dbb-41de-b727-8d363273ea4f.png)
+
+**{}.isdisjoint**
+
+O método **isdisjoint** é utilizado para verificar conjuntos que são disjuntos, ou seja um conjunto contém elementos de outro conjunto
+
+`conjunto_a = {1, 2, 3, 4, 5}`
+
+`conjunto_b = {6, 7, 8, 9}`
+
+`conjunto_c = {1, 0}`
+
+`conjunto_a.isdisjoint(conjunto_b)  # True`
+
+`conjunto_a.isdisjoint(conjunto_c)  # False`
+
+![image](https://user-images.githubusercontent.com/112986146/195989577-0b564ded-63ca-4933-a0b0-56c58e7fd496.png)
+
+**{}.add**
+
+O método **add** é utilizado para adicionar elementos que não existem em um conjunto
+
+**exe:**
+
+`sorteio = {1, 23}`
+
+`sorteio.add(25)  # {1, 23, 25}`
+
+`sorteio.add(42)  # {1, 23, 25, 42}`
+
+`sorteio.add(25)  # {1, 23, 25, 42}`
+
+**{}.clear**
+
+O método **clear** é utilizado para limpar um conjunto
+
+**exe:**
+
+`sorteio = {1, 23}``
+
+`sorteio  # {1,23}`
+
+`sorteio.clear()`
+
+`sorteio  # {}`
+
+**{}.copy**
+
+O método **copy** é utilizado para gerar um cópia de um conjunto
+**exe:**
+
+`sorteio = {1, 23}``
+
+`sorteio  # {1,23}`
+
+`sorteio.copy()`
+
+`sorteio  # {1, 23}`
+
+
+**{}.discard**
+
+O método **discard** é utilizado para descartar um valor de um conjunto e somente valores existentes serão descartados
+
+**exe:**
+
+`numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}`
+
+`numeros  # {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}`
+
+`numeros.discard(1)`
+
+`numeros.discard(45)`
+
+`numeros  # {2, 3, 4, 5, 6, 7, 8, 9, 0}`
+
+
+**{}.pop**
+
+O método **pop** é utilizado para retirar valores, ele começa sempre pelos primeiros valores formando então uma sequência.
+
+**exe:**
+
+`numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}`
+
+`numeros  # {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}`
+
+`numeros.pop()  # 0`
+
+`numeros.pop()  # 1`
+
+
+`numeros  # {2, 3, 4, 5, 6, 7, 8, 9}`
+
+**{}.remove**
+
+O método **remove** é utilizado para remover valores podendo se utilizar como argumento o valor a ser removido e caso esse valor não exista ele retorna uma mensagem de erro.
+
+**exe:**
+
+`numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}`
+
+`numeros  # {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}`
+
+`numeros.remove(0)  # 0`
+
+`numeros  # {1, 2, 3, 4, 5, 6, 7, 8, 9}`
+
+**{}.len**
+
+O método **len** é utilizado para retornar o tamanho de um conjunto
+**exe:**
+
+`numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}`
+
+`len(numeros)  # 10`
+
+**{}.len**
+
+O método **in** é utilizado para verificar se um elemento esta dentro de um conjunto
+
+**exe:**
+
+`numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}`
+
+`1 in numeros  # True`
+
+`10 in numeros  # False`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
