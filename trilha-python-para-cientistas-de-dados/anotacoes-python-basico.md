@@ -1,10 +1,18 @@
-# Anotações aulas :memo:
+# Anotações cursos Python Básico
 
-## Curso: Ambiente de Desenvolvimento e Primeiros Passos com Python :snake:
+Cursos da trilha de cientista de dados 
 
-### Definindo o ambiente e primeiros passos com Python
+Nível: Básico
 
-**Introdução ao Python**
+Carga horária: 9h + desafio de código 1h + desafio de projeto 4 = 14h
+ 
+Skills: Python, Data
+
+# Curso 1: Ambiente de Desenvolvimento e Primeiros Passos com Python 🐍 📝
+
+## Definindo o ambiente e primeiros passos com Python
+
+### Introdução ao Python
 
 Python foi criada em 1989 pelo programador Guido Van Rossum. A ideia era dar continuidade a linguagem ABC desenvolvida no Centro de Pesquisa Holandês (CWI), essa era uma linguagem pensada para iniciantes devido a sua facilidade de aprendizagem e utilização. Ele quis continuar o projeto  como hobby  e seus objetivos para a linguagem Python eram:
 
@@ -35,7 +43,7 @@ Python é uma linguagem versátil e possui as seguintes características:
 * Curva de aprendizado baixa. (fácil de aprender para quem está iniciando e fácil de se adaptar para quem já tem experiência).
 * **Não** é recomendado para Mobile
 
-**Configuração de ambiente de desenvolvimento**
+### Configuração de ambiente de desenvolvimento
 
 link instalação Windows: http://python.org.br/instalacao-windows/
 
@@ -47,7 +55,9 @@ link instalação Windows: http://python.org.br/instalacao-windows/
 
 No VsCode instalar as extensões: Python, autoDocstring e intelliCode
 
-## Curso: Conhecendo a Linguagem de Programação Python :snake:
+# Curso 2: Conhecendo a Linguagem de Programação Python 🐍 📝
+
+## Conhecendo a linguagem
 
 ### Tipos de Dados
 
@@ -253,7 +263,9 @@ print(nome, sobrenome, sep="#")`
 ´>>>João Andrade
 ´>>>João#Andrade`
 
-## Curso: Tipo de operadores :snake:
+# Curso 3: Tipo de operadores com Python 🐍 📝
+
+## Tipos de Operadores
 
 ### Operadores Aritméticos
 
@@ -544,7 +556,9 @@ https://wiki.python.org.br/ModoInterativohttps://docs.python.org/3/library/funct
 
 https://docs.python.org/3/library/functions.html#print
 
-## Curso: Estruturas condicionais e de repetição :snake:
+# Curso: Estruturas condicionais e de repetição em Python 🐍 📝
+
+## Estruturas condicionais e de repetição
 
 ### Indentação e blocos
 
@@ -786,7 +800,9 @@ Ele pula a execução
          
         print(numero)
 
-## Curso: Dominando Strings e Fatiamento :snake:
+## Curso: Manipulação de strings com Python 🐍 📝
+
+## Dominando Strings e Fatiamento
 
 ### Conhecendo métodos úteis da classe string
 
@@ -934,3 +950,124 @@ Strings de múltiplas linhas são definidas informados 3 aspas simples ou duplas
     estou aprendendo python
     """
     print(mensagem)
+    
+# Desafios iniciais Py - Unimed-BH
+
+## As Duas Torres
+    
+Saruman, o Branco, um grande mago da Terra-média, traiu os bons costumes e se filiou ao lorde do mal, Sauron. Sauron comanda a torre de Minas Morgul, que abriga um dos seus mais temidos servos, o Rei Bruxo de Angmar, um dos Nazgûl (antigos reis humanos que foram corrompidos pelos poderes dos anéis de Sauron). Saruman comanda a torre de Orthanc, onde cria seus servos Uruk-hai, orcs mais terríveis que os convencionais. Para comunicação, eles utilizam as relíquias esféricas chamadas Palantír, que ficam no topo de suas torres.
+A Terra-média avança cada vez mais em tecnologia, muito impulsionada pelas guerras que a acometem diariamente. Um dos problemas que tem atrapalhado sua população é a Interferência de Comunicação Mágica (ICM). Os estudiosos de Minas Tirith, grande cidadela de Gondor, concluíram que para calcular o ICM para Palantír’s, basta dividir a distância entre os dois Palantír’s, pela soma do diâmetro dos mesmos. Gandalf, o Cinza, chegou a questionar essa conclusão, alegando que ela não fazia muito sentido, mas ele mesmo concluiu que dar sentido às coisas não faz sentido.
+Saruman e Sauron precisam de uma comunicação estável, pois têm medo que Frodo e seus amigos consigam atrapalhar seus planos, portanto, querem saber quanto de ICM há na comunicação de seus Palantír’s, para que saibam quanto de magia devem empregar na comunicação.
+Entrada
+
+A entrada é composta por 3 inteiros, N(0 < N < 10000), X e Y(0 < X, Y < 100), que indicam, respectivamente, a distância entre os Palantír, o diâmetro do Palantír de Sauron e o diâmetro do Palantír de Saruman.
+Saída
+
+Um valor real indicando o ICM da comunicação dos Palatír de Sauron e Saruman, com 2 casas decimais.
+
+### Resposta: 
+DICAS SOBRE PYTHON:
+**FUNÇÃO input(): Ela recebe como parâmetro uma String que será visível ao usuário, 
+onde geralmente informa que tipo de informação ele está esperando receber;
+FUNÇÃO print(): Ela é a responsável por imprimir os dados e informar os valores no terminal;
+MÉTODO split(): permite dividir o conteúdo da variável de acordo com as condições especificadas 
+em cada parâmetro da função ou com os valores predefinidos por padrão;**
+
+Abaixo segue um exemplo de código que você pode ou não utilizar
+
+`entrada = input().split()`
+
+`distancia = int(entrada[0])`
+`diametro1 = int(entrada[1])`
+`diametro2 = int(entrada[2])`
+
+TODO: Calcule o ICM da comunicação dos Palatír de Sauron e Saruman, com 2 casas decimais no espaço #em branco abaixo:
+
+`if ((distancia > 0 and distancia < 10000) and (diametro1 > 0 and diametro1 <100) and (diametro2 > 0 and diametro2 < 100)):`
+    
+    `ICM = distancia / (diametro1 + diametro2)`
+    `print(f"{ICM:.2f}")`
+
+## Cachorros-Quentes
+
+Em 2012 foi alcançado um novo recorde mundial na famosa Competição de Cachorros-Quentes do Nathan: o campeão, Joey Chestnut, devorou 68 cachorros-quentes em dez minutos, um aumento incrível em relação aos 62 sanduíches devorados pelo mesmo Chestnut em 2011.
+
+O restaurante Nathan’s Famous Corporation, localizado no Brooklyn, NY, é o responsável pela competição. Eles produzem deliciosos cachorros-quentes, mundialmente famosos, mas quando o assunto é matemática eles não são tão bons. Eles desejam ser listados no Livro de Recordes do Guinness, mas para isso devem preencher um formulário descrevendo os fatos básicos da competição. Em particular, eles devem informar o número médio de cachorros-quentes consumidos pelos participantes durante a competição.
+
+Você pode ajudá-los? Eles prometeram pagá-lo com um dos seus saborosos cachorros-quentes. Dados o número total de cachorros-quentes consumidos e o número total de participantes na competição, você deve escrever um programa para determinar o número médio de cachorros-quentes consumidos pelos participantes.
+Entrada
+
+A entrada consiste de uma única linha que contém dois inteiros H e P (1 ≤ H, P ≤ 1000) indicando respectivamente o número total de cachorros-quentes consumidos e o número total de participantes na competição.
+Saída
+
+Seu programa deve produzir uma única linha com um número racional representando o número médio de cachorros-quentes consumidos pelos participantes. O resultado deve ser escrito como um número racional com exatamente dois dígitos após o ponto decimal, arredondado se necessário.
+
+### Resposta:
+
+DICAS SOBRE PYTHON:
+**FUNÇÃO input(): Ela recebe como parâmetro uma String que será visível ao usuário, 
+onde geralmente informa que tipo de informação ele está esperando receber;
+FUNÇÃO print(): Ela é a responsável por imprimir os dados e informar os valores no terminal;
+MÉTODO split(): permite dividir o conteúdo da variável de acordo com as condições especificadas 
+em cada parâmetro da função ou com os valores predefinidos por padrão;**
+
+Abaixo segue um exemplo de código que você pode ou não utilizar
+
+`valores = input().split()`
+
+TODO:  Calcule a média de cachorros quentes consumidas por participante e imprima o valor com DUAS casas decimais.
+
+`hotdog_consumidos = int(valores[0])`
+`participantes_competicao = int(valores[1])`
+
+`if ((hotdog_consumidos >= 1 and participantes_competicao <= 1000)):`
+    
+    `consumo_medio_hotdog = (hotdog_consumidos / participantes_competicao)`
+    `print(f"{consumo_medio_hotdog:.2f}")v
+    
+## Cálculo de viagem
+
+Rubens quer calcular e mostrar a quantidade de litros de combustível gastos em uma viagem de carro, sendo que seu carro faz 12 KM/L. Como ele não sabe fazer um programa que o auxilie nessa missão, ele te pede ajuda. Para efetuar o cálculo, deve-se fornecer o tempo gasto em horas na viagem e a velocidade média durante a mesma em km/h. Assim, você conseguirá passar para Rubens qual a distância percorrida e, em seguida, calcular quantos litros serão necessários para a viagem que ele quer fazer. Mostre o valor com 3 casas decimais após o ponto.
+Entrada
+
+O arquivo de entrada contém dois inteiros. O primeiro é o tempo gasto na viagem em horas e o segundo é a velocidade média durante a mesma em km/h.
+Saída
+
+Imprima a quantidade de litros necessária para realizar a viagem, com três dígitos após o ponto decimal
+
+### Resposta
+
+DICAS SOBRE PYTHON:
+**FUNÇÃO input(): Ela recebe como parâmetro uma String que será visível ao usuário, 
+onde geralmente informa que tipo de informação ele está esperando receber;
+FUNÇÃO print(): Ela é a responsável por imprimir os dados e informar os valores no terminal;
+MÉTODO split(): permite dividir o conteúdo da variável de acordo com as condições especificadas 
+em cada parâmetro da função ou com os valores predefinidos por padrão;**
+
+Abaixo segue um exemplo de código que você pode ou não utilizar
+
+`valores = input().split()`
+
+TODO: Calcule quantidade de litros necessária para realizar a viagem e imprima com TRÊS dígitos após o ponto decimal
+
+Consumo médio de gasolina:
+
+`media_km_por_litro = 12`
+
+Valores de entrada:
+
+`tempo_viagem = int(valores[0])`
+`velocidade_media = int(valores[1])`
+
+Cálculo da distância (km) total da viagem:
+
+`distancia_total = (tempo_viagem * velocidade_media)` 
+
+Total de litros de gasolina necessários para a viagem:
+
+`consumo_gasolina = (distancia_total / media_km_por_litro)`
+`print(f"{consumo_gasolina:.3f}")`
+
+
+
+    
