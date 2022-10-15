@@ -1,5 +1,15 @@
-# Trabalhando com Listas em Python 📝 🐍
-## Criando listas
+# Anotações cursos Python Intermediário
+
+Cursos da trilha de cientista de dados
+
+Nível: Intermediário
+
+Carga horária: 8h
+
+Skills: Python, Data
+
+# Curso 6: Trabalhando com Listas em Python 📝 🐍
+## Listas: Criação e acessos aos dados
 Listas em Python podem armazenar de maneira sequencial qualquer tipo de objeto. 
 Podemos criar listas utilizando o construtor **list**, a função range ou colocando 
 valores separados por vírgula dentro de colchetes. Listas são objetos mutáveis, 
@@ -150,7 +160,7 @@ lista aplicando alguma modificação nos elementos de uma lista existente.
 
 `quadrado = [numero ** 2 for numero in numeros]`
 
-### Métodos da classe list
+## Métodos da classe list
 
 **[].append**
 
@@ -332,8 +342,8 @@ O sorted é uma função que serve para ordenar iteraveis. (é basicamente a mes
 
 `sorted(linguagens, key=lambda x: len(x), reverse=True)  # ["python", "csharp", "java", "js", "c"]`
 
-## Conhecendo Tuplas em Python
-### Criando Tuplas
+# Curso 7: Conhecendo Tuplas em Python 🐍 📝
+## Criando Tuplas
 Tuplas são estruturas de dados muito parecidas com as listas, a principal diferença é que tuplas são imutáveis enquanto lsitas são mutáveis. podemos criar tuplas através da classe **tuple**, ou colocando valores separados por vírgulas de parenteses.
 
 **exe:**
@@ -410,7 +420,7 @@ Além de acessar elementos diretamente, podemos extrair um conjunto de valores d
 
 `lista[::-1]  # ["n", "o", "h", "t", "y", "p"]`
 
-### Métodos da classe tupla
+## Métodos da classe tupla
 
 **[].count**
 
@@ -448,10 +458,8 @@ O método len é utilizado para saber a quantidade de objetos contidos em uma li
 
 `len(linguagens)  # 5`
 
-## Explorando conjuntos
-
-### Como crair conjuntos
-
+##  Curso 8: Explorando conjuntos em Python 🐍 📝
+## Como crair conjuntos
 Um **set** é uma coleção que não possui objetos repetidos, usamos sets para representar conjuntos matemáticos ou eliminar itens duplicados de um iterável.
 
 **exe:**
@@ -499,7 +507,7 @@ A forma mais comum para percorrer os dados de um conjunto é utilizando o comand
 `print(f"{indice}: {carro}")`
 
 
-### Métodos da classe set
+## Métodos da classe set
 
 **{}.union**
 
@@ -703,8 +711,261 @@ O método **in** é utilizado para verificar se um elemento esta dentro de um co
 
 `10 in numeros  # False`
 
+# Curso 9: Aprendendo a Utilizar dicionários em Python 🐍 📝
+## Dicionários: Criação e acesso aos dados
+### Criando dicionários
+Um dicionário é um conjunto não-ordenado de pares chave:valor, onde as chaves são únicas em uma dada instância do dicionário. Dicionários são delimitados por chaves: {}, e contém uma lista de pares chave:valor separada por vírgulas. Não permite chaves repetidas ele sobreescreve os valores.
 
+**exe:**
 
+`pessoa = {"nome": "Guilherme", "idade": 28}`
+
+`pessoa = dict(nome="Guilherme", idade=28)`
+
+`pessoa["telefone"] = "3333-1234"  # {"nome": "Guilherme", "idade": 28, "telefone": "3333-1234"}`
+
+### Acesso aos dados
+Os dados são acessados e modificados através da chave.
+
+**exe:**
+
+`dados = {"nome": "Guilherme", "idade": 28, "telefone": "3333-1234"}`
+
+`dados["nome"]  # "Guilherme"`
+
+`dados["idade"]  # 28`
+
+`dados["telefone"]  # "3333-1234"`
+
+`dados["nome"] = "Maria"`
+
+`dados["idade"] = 18`
+
+`dados["telefone"] = "9988-1781"`
+
+vdados  # {"nome": "Maria", "idade": 18, "telefone": "9988-1781"}`
+
+### Dicionários aninhados
+Dicionários aninhados podem armazenar qualque tipo de objeto Python como valor, desde que a chave para esse valor seja um objeto imutável como (strings e números)
+
+contatos = {
+
+   `"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},`
+   
+   `"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},`
+   
+   `"chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},`
+   
+   `"melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
+`}`
+
+`contatos["giovanna@gmail.com"]["telefone"]  # "3443-2121"`
+
+### Iterar dicionários
+A forma mais comum para percorrer os dados de um dicionário é utilizando o comando **for**
+
+**exe:**
+`for chave in contatos:` #método não recomendado
+
+    `print(chave, contatos[chave])`
+    
+`for chave, valor in contatos.items():`
+
+    `print(chave, valor)`
+    
+`guilherme@gmail.com {'nome': 'Guilherme', 'telefone': '3333-2221'}`
+
+`giovanna@gmail.com {'nome': 'Giovanna', 'telefone': '3443-2121'}`
+
+`chappie@gmail.com {'nome': 'Chappie', 'telefone': '3344-9871'}`
+
+`melaine@gmail.com {'nome': 'Melaine', 'telefone': '3333-7766'}`
+
+## Métodos da classe dict
+
+**{}.clear**
+
+O método **clear** apaga todos os valores do dicionário
+
+*exe:**
+
+`contatos = {`
+
+    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
+    "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
+    "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
+    "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},
+`}`
+`contatos.clear()`
+`contatos  # {}`
+
+**{}.copy**
+
+O método **copy** ele faz uma cópia do dicionário
+
+**exe:**
+
+`contatos = {`
+    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}`
+`}`
+
+`copia = contatos.copy()`
+
+copia["guilherme@gmail.com"] = {"nome": "Gui"}
+contatos["guilherme@gmail.com"]  # {"nome": "Guilherme", "telefone": "3333-2221"}
+copia["guilherme@gmail.com"]  # {"nome": "Gui"}`
+
+**{}.fromkeys**
+
+O método **fromkeys** cria chaves vazias ou com um valor padrão de uma vez só
+
+**exe:**
+
+`dict.fromkeys(["nome", "telefone"])  # {"nome": None, "telefone": None}`
+
+`dict.fromkeys(["nome", "telefone"], "vazio")  # {"nome": "vazio", "telefone": "vazio"}`
+
+**{}.get**
+
+O método **get** acessa valores do dicionário
+
+**exe:**
+
+vcontatos = {`
+    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}`
+}
+`contatos["chave"]  # KeyError`
+
+contatos.get("chave")  # None
+contatos.get("chave", {})  # {}
+contatos.get("guilherme@gmail.com", {})  # {"guilherme@gmail.com": {"nome":
+"Guilherme", "telefone": "3333-2221"}`
+
+**{}.items**
+
+O método **items** retorna todos os valores do dicionario e as chaves
+
+**exe:**
+
+`contatos = {`
+    "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+`}`
+`contatos.items()  # dict_items([('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})])`
+
+**{}.keys**
+
+O método **keys** retorna todos os valores das chaves somente
+
+**exe:**
+`contatos = {`
+    `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}``
+`}`
+`contatos.keys()  # dict_keys(['guilherme@gmail.com'])`
+
+**{}.pop**
+
+O método **pop** remove um valor do dicionário e retorna esse valor se caso ele for encontrado
+
+**exe:**
+
+`contatos = {`
+   `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+`}`
+`contatos.pop("guilherme@gmail.com")  # {'nome': 'Guilherme', 'telefone': '3333-2221'}`
+`contatos.pop("guilherme@gmail.com", {})  # {}`
+
+**{}.popitem**
+
+O método **popitem** remove os items de um dicionário na sequencia
+
+**exe:**
+
+`contatos = {`
+     `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+`}`
+`contatos.popitem()  # ('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})`
+`contatos.popitem()  # KeyError`
+
+**{}.setdefault**
+
+O método **setdefault** se caso o valor de chave ja existir ele não adiciona, caso contrário ele adiciona a chave com o seu valor.
+
+**exe:**
+
+``contato = {'nome': 'Guilherme', 'telefone': '3333-2221'}`
+
+`contato.setdefault("nome", "Giovanna")  # "Guilherme"`
+`contato  # {'nome': 'Guilherme', 'telefone': '3333-2221'}`
+
+`contato.setdefault("idade", 28)  # 28`
+`contato  # {'nome': 'Guilherme', 'telefone': '3333-2221', 'idade': 28}`
+
+**{}.update**
+
+O método **update** permite que o dicionário seja atualizado com outros dicionários.
+
+**exe:**
+
+`contatos = {`
+   `"guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}`
+`}`
+
+`contatos.update({"guilherme@gmail.com": {"nome": "Gui"}})`
+`contatos  # {'guilherme@gmail.com': {'nome': 'Gui'}}`
+
+`contatos.update({"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3322-8181"}})`
+`contatos  # {'guilherme@gmail.com': {'nome': 'Gui'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': '3322-8181'}}`
+
+**{}.values**
+
+O método **values** retorna todos os valores do dicionário.
+
+**exe:**
+
+`contatos = {`
+    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
+    "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
+    "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
+    "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
+`}`
+
+`contatos.values()  # dict_values([{'nome': 'Guilherme', 'telefone': '3333-2221'}, {'nome': 'Giovanna', 'telefone': '3443-2121'}, {'nome':` `'Chappie', 'telefone': '3344-9871'}, {'nome': 'Melaine', 'telefone': '3333-7766'}])`
+
+**in**
+
+O método **in** verifica se um determinado valor é uma chave em um determinado dicionário.
+
+**exe:**
+`contatos = {`
+   "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
+   "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
+   "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
+   "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},
+   
+`}`
+
+"guilherme@gmail.com" in contatos  # True
+"megui@gmail.com" in contatos  # False
+"idade" in contatos["guilherme@gmail.com"]  # False
+"telefone" in contatos["giovanna@gmail.com"]  # True`
+
+**del**
+
+O método **del** apaga valores do dicionário
+
+**exe:**
+
+`contatos = {`
+    "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
+    "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
+    "chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
+    "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},`
+`}`
+
+`del contatos["guilherme@gmail.com"]["telefone"]
+`del contatos["chappie@gmail.com"] `
+
+`contatos # {'guilherme@gmail.com': {'nome': 'Guilherme'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': 3443-2121'},`'melaine@gmail.com': {'nome': 'Melaine', 'telefone': '3333-7766'}}`
 
 
 
