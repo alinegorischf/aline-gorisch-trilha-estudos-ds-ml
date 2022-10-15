@@ -12,12 +12,39 @@ Skills: Python, Data
 ## Fundamentos ETL
 
 ### Introdução ao ETL - Definição
+**Objetivos**
+
+1- Definição
+2- Por que precisamos
+3- Visão geral
+4- Algumas ferramentas e pacotes
+5- Para saber mais
+
+### Definição
+O processo de ETL percorre 3 etapas
+1)**Extract:** os dados são extraídos de diferentes fontes de dados.
+
+2)**transform:** Propagados para a área de preparação de dados, onde são transformados e limpos.
+
+3)**Load:** Carregados no data warehouse.
 
 ### Por que precisamos?
+O ETL é uma etapa de extrema importância na tomada de decisões. Como os dados podem vir de fontes e extensões diferentes, a tomada de decisão com esses dados brutos se torna algo impossível, por isso é necessário a etapa do ETL, pois nesse processo é que todos os dados serão **estraídos** de acordo com o contexto do projeto e existem duas formas de extração, em lote **(Batch)** essas extrações devem ocorrem em momentos específicos, devido a complexidade e tamanho o que pode fazer com que outros setores não operem de forma produtiva, sendo recomendado planejar a extração quando houver menos quantidade de trabalho ou em períodos noturnos. E dados que podem ser processados em tempos real **(Real Time)**. Após a extração os dados dvem ser **transformados**, para sem seguida serem **validados**, **normalizados** e carregados de forma integra e dentro do contexto de negócio. Após esse processo os dados podem ser relacionados e ferramentas de visualização podem ser usadas e relacionadas com esses dados.
 
 ### Visão geral sobre ETL
 
+**Data Sources**: Diferentes fontes de dados, que armazenam os dados que vão ser extraídos e carregados para dentro do contexto da empresa.
+
+**Data Flow / pipeline**: Data Flow caminhos dos dados até o carregamento e disponibilidade para visualização (Data validation, data cleaning, Data transforming, Data agregation, Data loading) Pipeline segimentação dos processos (Datamarts).
+
+**BI results** (OLAP Analisys, Data Mining, Data Visualization, Reports, Dashboards e Alerts)
+
 ### Ferramentas e Pacotes
+**Ferrmentas e Pacotes para a lingugem Python**
+* **Apache Airflow** 
+* **Luigi**
+* **
+
 
 ## Preparação do Projeto ETL
 
