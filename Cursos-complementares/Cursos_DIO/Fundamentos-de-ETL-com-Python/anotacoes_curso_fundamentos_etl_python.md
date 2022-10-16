@@ -15,13 +15,18 @@ Skills: Python, Data
 **Objetivos**
 
 1- Definição
+
 2- Por que precisamos
+
 3- Visão geral
+
 4- Algumas ferramentas e pacotes
+
 5- Para saber mais
 
 ### Definição
 O processo de ETL percorre 3 etapas
+
 1)**Extract:** os dados são extraídos de diferentes fontes de dados.
 
 2)**transform:** Propagados para a área de preparação de dados, onde são transformados e limpos.
@@ -37,14 +42,30 @@ O ETL é uma etapa de extrema importância na tomada de decisões. Como os dados
 
 **Data Flow / pipeline**: Data Flow caminhos dos dados até o carregamento e disponibilidade para visualização (Data validation, data cleaning, Data transforming, Data agregation, Data loading) Pipeline segimentação dos processos (Datamarts).
 
-**BI results** (OLAP Analisys, Data Mining, Data Visualization, Reports, Dashboards e Alerts)
+**BI results**: (OLAP Analisys, Data Mining, Data Visualization, Reports, Dashboards e Alerts)
 
 ### Ferramentas e Pacotes
 **Ferrmentas e Pacotes para a lingugem Python**
-* **Apache Airflow** 
-* **Luigi**
-* **
 
+* **Apache Airflow**: O Apache Airflow é uma plataforma de código aberto para desenvolvimento, agendamento e monitoramento de fluxos de trabalho orientados a lotes. A estrutura Python extensível do Airflow permite que você crie fluxos de trabalho conectando-se a praticamente qualquer tecnologia. Uma interface da Web ajuda a gerenciar o estado de seus fluxos de trabalho. O Airflow pode ser implantado de várias maneiras, variando de um único processo em seu laptop a uma configuração distribuída para oferecer suporte até mesmo aos maiores fluxos de trabalho.
+* **Luigi**: O objetivo do Luigi é abordar todo o encanamento normalmente associado a processos em lote de longa duração. Se você quiser encadear muitas tarefas, automatize-as e as falhas acontecerão. Essas tarefas podem ser qualquer coisa, mas normalmente são coisas de longa duração, como tarefas do Hadoop, despejar dados de/para bancos de dados, executar algoritmos de aprendizado de máquina ou qualquer outra coisa.
+* **Bonobo**: Bonobo é uma estrutura leve Extract-Transform-Load (ETL) para Python 3.5+. Ele fornece ferramentas para construir pipelines de transformação de dados, usando primitivas python simples e executando-as em paralelo. Bonobo é o canivete suíço para dados diários.
+* **bubbles**: Bubbles é uma estrutura Python para processamento de dados e medição de qualidade de dados. Os conceitos básicos são objetos de dados abstratos, operações e despacho dinâmico de operações. 
+* **Petl**: petl é um pacote Python de uso geral para extrair, transformar e carregar tabelas de dados.
+* **pandas**: pandas é uma ferramenta de análise e manipulação de dados de código aberto rápida, poderosa, flexível e fácil de usar,
+construído sobre a linguagem de programação Python.
+
+### Para saber mais
+* [Apache Airflow](http://airflow.apache.org/)
+* [Luigi](https://luigi.readthedocs.io/en/stable)
+* [Bonobo](https://www.bonobo-project.org/)
+* [Bubbles](http://bubbles.databrewery.org/)
+* [Petl](https://petl.readthedocs.io/en/stable/)
+* [Pandas](https://pandas.pydata.org/)
+
+**Referências**
+* ALIEL-SAPPAGH, Shaker H.; AHMEDHENDAWI, Abdeltawab M.; BASTAWISSY, Ali HamedEl. A proposed model for data warehouse ETL processes. Journal of King Saud University - Computer and Information Sciences, [s. l.], ano 2011, v. 23, ed. 2, p. 91-104, Julho 2011.
+* WILLIAM, Lourdes. Why You Need ETL Testing and What You Need to Know. [S. l.], 8 mar. 2021. Disponível em: https://www.cigniti.com/blog/why-need-etl-testing-what-need-now/. Acesso em: 16 maio 2021.
 
 ## Preparação do Projeto ETL
 
