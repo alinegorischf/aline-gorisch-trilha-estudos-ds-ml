@@ -69,19 +69,21 @@ construído sobre a linguagem de programação Python.
 
 ## Preparação do Projeto ETL
 
-### Objetivos da aula
+### Objetivos
 
-### Instalação e configuração do ambiente - Jupyter na máquina
-
-### Conheça a ferramenta Anaconda
-
-### Origem dos dados acessíveis para o projeto
-
-### Vizualização dos dados da planilha
+1. Preparação do ambiente
+2. Definição do projeto
 
 ## Desenvolvimento do Projeto ETL - Extração e Validação
 
 ### Objetivos da aula
+
+1. Desenvolvimento prático do projeto de ETL
+* Estração
+* Validação
+* Limpeza 
+* Transformação
+* Considerações finais (carregamento)
 
 ### Como a extração dos dados será realizada
 
