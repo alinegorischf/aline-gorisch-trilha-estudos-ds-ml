@@ -101,4 +101,41 @@ Ferramentas possuem a capacidade de reiniciar a carga de onde pararam sem a nece
 É possível articular melhor a segurança tornado-a mais modular, dividindo as finalidades 
 (criação de cargas, execução de cargas, agendamento, etc.)
 
+### Ferramenta aplicadas para ETL
+**Ferramentas utlizadas**
+
+As ferramentas são softwares **utilizados para facilitar o processo de integração de dados**. Inicialmente muito usados em projetos de **Data Warehouse e Business Inteligence** em geral, ultimamente tem sido utilizados em processo de integração de softeare, banco de dados, etc.
+![image](https://user-images.githubusercontent.com/112986146/197197537-6fdec43f-1367-4d70-aee3-6d66bea78077.png)
+
+**Existem diversas ferramentas de ETL, como:**
+
+**IBM Data Stage** - https://www.cetax.com.br/datastage-ibm-ferramenta-de-etl/
+
+**Power Center** - https://www.cetax.com.br/power-center-informatica-ferramenta-de-etl/
+
+**SQL Server Integration Services** - https://www.cetax.com.br/ssis-sql-server-integration-Talend
+
+**Talend ETL** - https://www.cetax.com.br/criando-job-simples-no-talend/
+![image](https://user-images.githubusercontent.com/112986146/197198256-1257a7e6-c779-4aaf-a078-d503fb29b9a3.png)
+
+**ETL para Big Data**
+
+Hoje com o crescimento dos projetos de Big Data aumenta-se mais ainda a necessidade de fazer ETL entre plataformas heterogêneas, para isso, projetos como o Hadoop, posuem ferramentas próprias para carga de dados, como:
+
+**SQOOP** - Ferramenta para movimentar dados entre banco de dados relacionais e o ambiente Hadoop.
+
+**HIVE** - Ambiente SQL sobre um cluster Hadoop.
+
+**PIG** - Ferramenta de Script para transformação e processamento de dados.
+
+**SPARK** - Framework de processamento em memória.
+
+**O que é Hadoop**
+
+Hadoop é uma plataforma de software em Java de computação distribuída voltada para clusters e processamento de grandes volumes de dados, com atenção a tolêrancia a falhas.
+
+Mesmo com todas as possibilidades acima, vemos as ferramentas de ETL se adaptando para **Big Data** ou gerando códigos para serem rodados nessas ferramentas do Ecossistema Hadoop.
+
+Em Big Data, o processo de carga também é conhecido como ingestão de Dados, que geralmente é a primeira parte de carga (Extract) a parte mais simples do processo, que consiste em Extrair dados dos sistemas de origem e trazer para dentro do Data Lake ou ambiente de dados utilizados.
+
 
