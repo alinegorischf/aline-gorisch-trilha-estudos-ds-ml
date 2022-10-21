@@ -138,4 +138,21 @@ Mesmo com todas as possibilidades acima, vemos as ferramentas de ETL se adaptand
 
 Em Big Data, o processo de carga também é conhecido como ingestão de Dados, que geralmente é a primeira parte de carga (Extract) a parte mais simples do processo, que consiste em Extrair dados dos sistemas de origem e trazer para dentro do Data Lake ou ambiente de dados utilizados.
 
+### Introdução à biblioteca Pandas
+**Utilizando a biblioteca**
+
+O pandas permite trabalhar com diferentes tipos de dados, por exemplo:
+
+* Dados tabulares, como planilha do excel ou uma tabela SQL;
+* Dados ordenados de modo temporal ou não, Matrizes;
+* Qualquer conjunto de dados, que não necessariamente precisem estar rotulados;
+
+**Estruturas de Dados**
+
+* Os dois principais objetos da biblioteca Pandas são as **Series** e os **DataFrames**
+* Uma **série** é uma matriz unidimensional que contém uma sequencia de valores que apresentam uma indexação (que podem ser numéricos ou inteiros ou rótulos), muito parecida com uma única coluna no Excel.
+* Já o **DataFrame** é uma estrutura de dados tabular, semelhante a planilha de dados do Excel, em que tanto as lihas quanto as colunas apresentam rótulos.
+
+
+
 
