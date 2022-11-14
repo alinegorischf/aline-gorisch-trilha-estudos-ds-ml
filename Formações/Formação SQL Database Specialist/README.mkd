@@ -1,0 +1,70 @@
+# **Formação: SQL Database Specialist**:woman_technologist:
+
+**Instituição de Ensino: [DIO](https://www.dio.me/)**
+
+**Professora: [Juliana Mascarenhas](https://www.linkedin.com/in/juliana-mascarenhas-ds/)  - Instrutora** 
+
+**Nível: Avançado | Carga Horária: 72hrs**
+
+### Objetivo geral
+
+Fazer com que o aluno possa trilhar um caminho de Analista de Banco de Dados com foco no MySQL, porém toda teoria e materiais podem ser aplicados em outros SGBDS, diferenciando-se somente a sintaxe da semântica  da linguagem SQL aplicada ao MySQL.
+
+#### Objetivos Gerais
+
+* Construção de Banco de Dados
+* Interpretação e Extração de Dados
+* Manutenção dos métodos e procedures
+* Modelagem de dados
+* Desempenho 
+* Equipe do DBA
+
+## Grade da Trilha
+
+### Módulo 1: Fundamentos de Banco de Dados
+
+1. [Introdução a Banco de Dados]()
+2. [Sistemas de Gerenciamento de Banco de Dados]()
+3. [Modelagem de Dados Para Banco de Dados]()
+4. [Arquitetura de Banco de Dados]()
+5. [Materiais Complementares - Fundamentos de Banco de Dados]()
+
+### Módulo 2: Modelo de Entidade Relacional com Banco de Dados
+
+1. [Linguagens de Programação para ML]()
+2. [Python para Machine Learning]()
+3. [Matlab para Machine Learning]()
+4. [R para Machine Learning]()
+5. [Instalação de bibliotecas e dependências]()
+6. [Plataformas de Colaboração: GitHub e Colab]()
+
+### Módulo 3: Explorando a Linguagem de Consulta a Banco de Dados SQL
+
+1. [Modelo Relacional e Mapeamento Relacional com Banco de Dados]()
+2. [Primeiros Passos com SQL]()
+3. [Explorando Queries com SQL]()
+4. [Criando Queries com Funções e Cláusulas de Agrupamentos]()
+5. [Agrupando Registros e Tabelas com Join Statement]()
+6. [Construindo se Primeiro Projeto Lógico de Banco de Dados]()
+7. [Construa um Projeto Lógico de Banco de Dados do Zero]()
+8. [Materiais Complementares - Explorando a Linguagem de Consulta à Banco de Dados SQL]()
+
+### Módulo 4: Técnicas Avançadas em Banco de Dados com MySQL
+
+1. [Personalizando acessos com Views]()
+2. [Explorando Cláusulas de DDL e Esquemas de Banco de Dados no MySQL]()
+3. [Explorando Lógica de Programação com SQL Dinâmico]()
+4. [Overview Sobre Automatização de Ações com Triggers no MySQL ]()
+5. [Fundamentos de Indexação em SGBDS com MySQL]()
+6. [Normalização em Banco de Dados]()
+7. [Personalizando o Banco de Dados com Índices e Procedures]()
+8. [Personalizando Acessos e Automatizando ações no MySQL]()
+9. [Materiais Complementares - Técnicas Avançadas de Banco de Dados]()
+
+### Módulo 5: Transações e Gerenciamento de Banco de Dados no MySQL
+
+1. [Transações de Banco de Dados com MySQL]()
+2. [Controle de Concorrência em Banco de Dados com MySQL]()
+3. [Técnicas de Recuperação em Dados de Banco de Dados com MySQL]()
+4. [Criando Transações, Executando Backup e Recovery de Banco de Dados]()
+5. [Materiais Complementares - Trabalhando com Transações, Controle de Concorrência e Técnicas de Recuperação de Banco de Dados no MySQL]()
