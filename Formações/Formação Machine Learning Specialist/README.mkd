@@ -1,5 +1,9 @@
 # **Formação: Machine Learning Specialist** :robot: :woman_technologist:
-**Professor: [Diego Renan](https://www.linkedin.com/in/diego-renan-bruno-48194484/)  - Pesquisador na área de Machine Learning** 
+**Instituição de Ensino: [DIO](https://www.dio.me/)**
+
+**Professor: [Diego Renan](https://www.linkedin.com/in/diego-renan-bruno-48194484/)  - Pesquisador na área de Machine Learning**
+
+**Nível: Avançado | Carga Horária: 92hrs**
 
 ## Apresentação
 
