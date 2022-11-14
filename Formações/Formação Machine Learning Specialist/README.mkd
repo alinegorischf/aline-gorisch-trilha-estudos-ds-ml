@@ -1,0 +1,81 @@
+# **Formação: Machine Learning Specialist** :robot: :woman_technologist:
+
+## Apresentação
+
+### Objetivo geral
+
+Apresentar os aspectos fundamentais e principais de algoritmos de **Machine Learning**, focando em técnicas para desenvolver modelos capazes de aprender de forma supervisionada ou não supervisionada, trabalhando algoritmos que seguem diferentes paradigmas computacionais.
+
+### Justificativa
+
+Apresentar ao aluno os princípios gerais de **Machine Learning** e fornecer uma visão geral dos diversos paradigmas e algoritmos existentes de aprendizado para aquisição automática de conhecimento a partir de conjuntos de dados, incluindo suas métricas de avaliações baseadas em teoria do aprendizado estatístico.
+
+## Grade da Trilha
+
+### Módulo 1: Introdução ao Machine Learning
+
+1. [Introdução ao Machine Learning]()
+2. [Métodos de Machine Learning bioinspirados]()
+3. [Redes Neurais Artificiais]()
+4. [Algoritmos Genéticos]()
+5. [Algoritmos de SVM]()
+6. [Criação e Utilização de Datasets]()
+
+### Módulo 2: Programação para ML
+
+1. [Linguagens de Programação para ML]()
+2. [Python para Machine Learning]()
+3. [Matlab para Machine Learning]()
+4. [R para Machine Learning]()
+5. [Instalação de bibliotecas e dependências]()
+6. [Plataformas de Colaboração: GitHub e Colab]()
+
+### Módulo 3: Algoritmos e Treinamento
+
+1. [Treinamento supervisionado]()
+2. [Treinamento Não-Supervisionado]()
+3. [Algoritmos de Classificação]()
+4. [Algoritmos de Regressão]()
+5. [Algoritmos de Clusterização]()
+6. [Extração de features e redução de dimensionalidade]()
+
+### Módulo 4: Teoria de Aprendizado Estatístico
+
+1. [Métodos de Validação]()
+2. [Métodos de Otimização]()
+3. [Otimização de Modelos em Hiperparâmetros]()
+4. [Métricas de Avaliação de Desempenho]()
+
+### Módulo 5: Deep Learning
+
+1. [Tipos de Redes de Deep Learning]()
+2. [Redes de Classificação]()
+3. [Redes de Detecção]()
+4. [Redes de Segmentação]()
+5. [Aplicações de Deep Learning]()
+
+### Módulo 6: Deep Learning Frameworks
+
+1. [Bibliotecas de Machine Learning]()
+2. [Bibliotecas: Pandas e Scikit-Learn]()
+3. [Frameworks de Machine Learning]()
+4. [Desenvolvimento de Algoritmos no TensorFlow]()
+5. [Desenvolvimento de Algoritmos no Keras]()
+6. [Ambientes de Projetos Colaborativos]()
+
+### Módulo 7: Processamento de Imagens
+
+1. [Introdução ao Processamento de Imagens Digitais]()
+2. [Métodos de Processamento de Imagens Digitais]()
+3. [Segmentação de Imagens]()
+4. [Programando com OpenCV]()
+5. [Filtros de Detecção de Bordas]()
+6. [Filtros para Eliminação de Ruídos]()
+
+### Módulo 8: Visão Computacional com ML
+
+1. [Introdução à Visão Computacional]()
+2. [Algoritmos de Rastreamento de Objetos]()
+3. [Algoritmos de Reconhecimento de Objetos]()
+4. [Algoritmos de Visão em Imagens 2D e 3D]()
+5. [Implementação e Testes de Algoritmos de Visão]()
