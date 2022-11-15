@@ -19,8 +19,8 @@ Apresentar ao aluno os princípios gerais de **Machine Learning** e fornecer uma
 
 ### Módulo 1: Introdução ao Machine Learning
 
-1. [Introdução ao Machine Learning]()
-2. [Métodos de Machine Learning bioinspirados]()
+1. [Introdução ao Machine Learning]():white_check_mark:
+2. [Métodos de Machine Learning bioinspirados]():white_check_mark:
 3. [Redes Neurais Artificiais]()
 4. [Algoritmos Genéticos]()
 5. [Algoritmos de SVM]()
