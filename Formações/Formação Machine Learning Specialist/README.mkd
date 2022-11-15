@@ -20,7 +20,7 @@ Apresentar ao aluno os princípios gerais de **Machine Learning** e fornecer uma
 ### Módulo 1: Introdução ao Machine Learning
 
 1. [Introdução ao Machine Learning](https://github.com/AlineGorischF/dio-desafio-github-primeiro-repositorio-trilha-estudos-ds/blob/main/Forma%C3%A7%C3%B5es/Forma%C3%A7%C3%A3o%20Machine%20Learning%20Specialist/Introdu%C3%A7%C3%A3o%20ao%20Machine%20Learning/Introdu%C3%A7%C3%A3o%20ao%20Machine%20Learning.mkd):white_check_mark:
-2. [Métodos de Machine Learning bioinspirados]():white_check_mark:
+2. [Métodos de Machine Learning bioinspirados](https://github.com/AlineGorischF/dio-desafio-github-primeiro-repositorio-trilha-estudos-ds/blob/main/Forma%C3%A7%C3%B5es/Forma%C3%A7%C3%A3o%20Machine%20Learning%20Specialist/Introdu%C3%A7%C3%A3o%20ao%20Machine%20Learning/M%C3%A9todos%20de%20Machine%20Learning%20Bioinspirados.mkd):white_check_mark:
 3. [Redes Neurais Artificiais]()
 4. [Algoritmos Genéticos]()
 5. [Algoritmos de SVM]()
