@@ -1,0 +1,26 @@
+# Métodos de Machine Learning Bioinspirados
+
+## Métodos de Machine Learning Bioinspirados
+
+### Algoritmos Bioinspirados
+
+* Inspirados no Comportamento de Seres vivos em convivência sosical;
+* Conhecimento Colaborativo/compartilhado;
+* Métodos Heurísticos (não determinísticos);
+* Buscam a melhor solução global;
+
+Ex: 
+
+* Colônia de abelhas
+* Colônia de formigas
+* Redes neurais - humanas
+* Genética
+* Lógica Fuzzy
+
+## Algoritmos Heurísticos x Determinísticos
+
+Uma solução Heurística depende de diversos critérios Fuzzy (difusa) e uma solução determinística booleana, onde se pode ter apenas um caminho verdadeiro ou falso.
+
+### RNA (Redes Neurais Artificiais)
+
+É o que mais se utiliza no aprendizado de máquina. É um tipo de algoritmo inspirado nos neuronios, onde se resulta em um "Cérebro artificial" capaz de executar uma tarefa na qual foi treinado. Ele pode demonstrar aprendizado a partir de diferente tipos de amostras.

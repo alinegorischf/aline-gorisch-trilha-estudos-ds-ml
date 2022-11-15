@@ -1,0 +1,39 @@
+# Machine Learning
+
+## Introdução ao Machine Learning
+
+* Treinamento de sistemas de **Inteligência Artificial**
+* Tomada de decisão com suporte de **base de regras** bem definidas
+* Não toma decisão com base na emoção
+* Automação para correção e suporte de falhas humanas
+
+**IA Geral: **É a inteligência representada nos filmes futuristas (Ficção científica)
+
+**IA Restrita:** É a inteligência presente no nosso dia-adia como: sistemas de reconhecimento facial, sistema de recomendação de compras e etc...
+
+**Aprendizado de Máquina:** O objetivo do aprendizado de máquina (ou **"Machine Learning"**) é programar computadores para aprender determinado comportamento ou padrão automaticamente a partir de observações. **DATASETS**
+
+**IA** não é o mesmo que **Machine Learning**
+
+**Machine Learning** é o meio para se conseguir criar uma **IA**
+
+### Inteligência Artificial Restrita
+
+Se dá por meio de um método de Machine Learning, exemplo de aprendizado por Machine Learning: Aprendizado por Reforço (Ela recebe um peso positivo se executar a tarefa proposta, caso contrário recebe um peso negativo. Ex: Notas de uma prova).
+
+Um dos modelos mais utilizados atualmente são as **Redes Neurais Artificiais**, é um modelo robusto em que são baseadas nos neurônios biológicos do nosso cérebro. Isso acontece por que se consegue gerar algoritmos bioinspirados que se comportam como pequenas partes do nosso cérebro, englobando neurônios  em uma quantidade bem ínfima (restrito) se comparado com nosso cérebro, e com isso  é possível realizar o **aprendizado restrito**  que resultará em uma **inteligência artificial restrita**.
+
+**Algumas aplicações de Machine Learning**
+
+* Veículos Autônomos
+* Sistemas de Recomendações
+* Sistemas de Sensores de Detecção
+
+Um método muito utilizado em Machine Learning é o **Deep Learning**, através do  TensorFlow é Framework gratuito, é] um tipo de rede de detecção do objeto a se classificar, essa rede utiliza **várias camadas de neurônios**, resultando um uma grande capacidade de reconhecimento de imagens, baseada na visão dos gatos. Ela interpreta detalhes, como textura, tamanho, cor, formato e etc.
+
+#### Bibliotecas de ML
+
+**ScikitLearn:** Modelos de Machine Learning
+
+**Pandas:** Dá suporte na análise e validação dos sistemas
+
