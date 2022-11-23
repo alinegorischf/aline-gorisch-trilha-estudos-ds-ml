@@ -19,21 +19,23 @@ Apresentar ao aluno os princípios gerais de **Machine Learning** e fornecer uma
 
 ### Módulo 1: Introdução ao Machine Learning
 
-1. [Introdução ao Machine Learning](https://github.com/AlineGorischF/dio-desafio-github-primeiro-repositorio-trilha-estudos-ds/blob/main/Forma%C3%A7%C3%B5es/Forma%C3%A7%C3%A3o%20Machine%20Learning%20Specialist/Certificados/60EB7260.pdf):white_check_mark:
-2. [Métodos de Machine Learning bioinspirados](https://github.com/AlineGorischF/dio-desafio-github-primeiro-repositorio-trilha-estudos-ds/blob/main/Forma%C3%A7%C3%B5es/Forma%C3%A7%C3%A3o%20Machine%20Learning%20Specialist/Certificados/8422722A.pdf):white_check_mark:
-3. [Redes Neurais Artificiais]()
-4. [Algoritmos Genéticos]()
-5. [Algoritmos de SVM]()
-6. [Criação e Utilização de Datasets]()
+1. [Introdução ao Machine Learning](https://www.dio.me/certificate/60EB7260/share):white_check_mark:
+2. [Métodos de Machine Learning bioinspirados](https://www.dio.me/certificate/8422722A/share):white_check_mark:
+3. [Redes Neurais Artificiais](https://www.dio.me/certificate/E81FC418/share):white_check_mark:
+4. [Algoritmos Genéticos](https://www.dio.me/certificate/7E6051BA/share):white_check_mark:
+5. [Algoritmos de SVM](https://www.dio.me/certificate/DF9088EF/share):white_check_mark:
+6. [Criação e Utilização de Datasets]():white_check_mark:
 
 ### Módulo 2: Programação para ML
 
-1. [Linguagens de Programação para ML]()
-2. [Python para Machine Learning]()
-3. [Matlab para Machine Learning]()
+1. [Linguagens de Programação para ML](https://www.dio.me/certificate/D9893DE1/share):white_check_mark:
+2. [Python para Machine Learning](https://www.dio.me/certificate/F3937D51/share):white_check_mark:
+3. [Scilab para Machine Learning]()
 4. [R para Machine Learning]()
-5. [Instalação de bibliotecas e dependências]()
-6. [Plataformas de Colaboração: GitHub e Colab]()
+5. [Frameworks para Machine Learning]()
+6. [Introdução ao COLAB]()
+7. [Desafios Básicos: Programação para Machine Learning]()
+8. [Treinamento de Redes Neurais com Transfer Learning]()
 
 ### Módulo 3: Algoritmos e Treinamento
 
