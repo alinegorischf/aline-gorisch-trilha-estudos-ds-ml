@@ -15,6 +15,8 @@ Apresentar os aspectos fundamentais e principais de algoritmos de **Machine Lear
 
 Apresentar ao aluno os princípios gerais de **Machine Learning** e fornecer uma visão geral dos diversos paradigmas e algoritmos existentes de aprendizado para aquisição automática de conhecimento a partir de conjuntos de dados, incluindo suas métricas de avaliações baseadas em teoria do aprendizado estatístico.
 
+### Na Grade da trilha contém os links para os certificados obtidos ao longo da formação, e os links para os Desafios de Código e Projetos.
+
 ## Grade da Trilha
 
 ### Módulo 1: Introdução ao Machine Learning
@@ -34,8 +36,8 @@ Apresentar ao aluno os princípios gerais de **Machine Learning** e fornecer uma
 4. [R para Machine Learning]()
 5. [Frameworks para Machine Learning]()
 6. [Introdução ao COLAB]()
-7. [Desafios Básicos: Programação para Machine Learning]()
-8. [Treinamento de Redes Neurais com Transfer Learning]()
+7. [Desafios de Códigos Básicos: Programação para Machine Learning]()
+8. [Desafio de Projeto: Treinamento de Redes Neurais com Transfer Learning]()
 
 ### Módulo 3: Algoritmos e Treinamento
 
